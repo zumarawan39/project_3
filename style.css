@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --blue-primary:rgb(0, 123, 255);   
+}
+.inner-container{
+    width: 85%;
+    margin: 0 auto;
+}
+button.btn.btn-primary.rounded-pill.out {
+    outline: none;
+}
+/* header */
+.search-bar{
+    min-width: 500px;
+    border: 2px solid #323232;
+}
+.search-icon{
+    background-color: #323232;
+    color: white;
+    width: 50px;
+}
+button#dropdownMenuButton1 {
+    background-color: #323232;
+}
+.search_btns.search-icon{
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+}
+.search_btns.products-btn{
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+button.btn.btn-primary.rounded-pill {
+    outline: 2px solid var(--blue-primary);
+    border: 1.5px solid white;
+}
+/* main samentik tag */
+main{
+    background-color:whitesmoke;
+}
+/* main banner */
+.main_banner{
+    background-image: url(./all_imgs/main-banner.png);
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* products catagries */
+.product_cat_card>div{
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.product_cat_card .card_1{
+    background-image: url(./all_imgs/main-banner.png);
+}
+.product_cat_card .card_2{
+    background-image: url(./all_imgs/cat_2.png);
+}
+.product_cat_card .card_3{
+    background-image: url(./all_imgs/cat_3.png);
+}
+/* trend products */
+.trend_products img{
+    object-fit: cover;
+}
+section.trend.py-4 .row {
+    background-color: white;
+}
+.trend_card {
+    box-shadow: 0 0 1.5px 0 grey;
+    border-radius: 5px;
+}
+span.price.d-flex>* {
+    font-weight: bold;
+    font-size: 20px;
+}
+/* apperal section */
+.apperal_main img {
+    object-fit: cover;
+    border-radius: 7px;
+}
+.apperal_cloths .row .cloths{
+    max-width: calc(19.5% - 12px);
+    min-height: 150px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.row.cloths{
+    gap: 12px;
+}
+/* price section */
+section.price{
+    background-color: white;
+}
+.price_img{
+    min-height: 300px;
+    background-image: url(./all_imgs/pricing-page-update-1.png);
+    background-size: cover;
+    background-position: center;
+}
+/* solution section */
+.solution.row{
+    gap: 20px 0;
+}
+.solution-inner-card{
+    background-color: white;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 #00000050;
+}
+.bi.bi-people-fill{
+    font-size: 30px;
+    color: var(--blue-primary);
+}
+/* faq section */
+section.faq{
+    background-color: white;
+}
+div#accordionExample>* {
+    border: none;
+    border-bottom: 1.5px solid silver;
+}
+/* footer */
+footer{
+    background-color: darkblue;
+}
+
+/* media query */
+@media screen and (max-width : 992px) {
+    .main_banner{
+        background-position: center;
+        background-position-x: right;
+    }
+    .apperal_main{
+        max-height: 200px;
+        margin-bottom: 20px;
+    }
+    .apperal_overlay.fw-bold{
+        align-items: start !important;
+    }
+    .trend_products{
+        max-width: 50% !important;
+    }
+    .apperal_cloths .row .cloths{
+        max-width: calc(15.5% - 12px);
+    }
+}
+/* small media query */
+@media screen and (max-width : 720px) {
+    .apperal_cloths .row .cloths{
+        max-width: calc(30% - 12px);
+        margin: 10px;
+    }
+    .main_banner{
+        background-position: center;
+    }
+}
